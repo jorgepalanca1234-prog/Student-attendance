@@ -1,0 +1,21 @@
+CREATE DATABASE student_time_system;
+USE student_time_system;
+
+CREATE TABLE sections (
+    section_id INT AUTO_INCREMENT PRIMARY KEY,
+    section_name VARCHAR(50)
+);
+
+CREATE TABLE students (
+    student_id INT AUTO_INCREMENT PRIMARY KEY,
+    student_name VARCHAR(100)
+);
+
+CREATE TABLE attendance_logs (
+    log_id INT AUTO_INCREMENT PRIMARY KEY,
+    student_id INT,
+    section_id INT,
+    date DATE,
+    time_in TIME,
+    time_out TIME
+);

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Attendance System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- LOGIN -->
+  <div class="container" id="loginDiv">
+    <h2>Student Login</h2>
+
+    <input type="text" id="loginName" placeholder="Student Name">
+    <input type="text" id="loginSection" placeholder="Section">
+
+    <button onclick="login()">Login</button>
+  </div>
+
+  <!-- ATTENDANCE -->
+  <div class="container" id="attendanceDiv" style="display:none;">
+    <h2 id="welcome"></h2>
+
+    <button onclick="timeIn()">Time In</button>
+    <button onclick="timeOut()">Time Out</button>
+    <button class="logout" onclick="logout()">Logout</button>
+
+    <h3>Attendance Records</h3>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Section</th>
+          <th>Time In</th>
+          <th>Time Out</th>
+        </tr>
+      </thead>
+      <tbody id="recordsTable"></tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+b 
